@@ -61,10 +61,10 @@ public class Terminal {
         System.out.println("Valor promocional: " + churros);
 
         //alterar o valor do produto
-        System.out.println("Digite o novo valor do produto: ");
+        System.out.println("Digite o novo valor do produto:");
         double precoNovo = entrada.nextDouble();
         produto.alterarPreco(precoNovo);
-        System.out.println("Novo preço: " + produto.preco);
+        System.out.println("Novo preco: " + produto.preco);
 
         //Ler a quantidade de produto que o cliente quer comprar
         System.out.println("Quantos itens deseja comprar?");
@@ -72,9 +72,7 @@ public class Terminal {
         //Calcular o valor com o desconto
         double valorFinal = produto.calcularDescontoPorQuantidade(qtdItens);
         //Exibir o valor
-
-        System.out.println("Valor Final com desconto: " + valorFinal);
-
+        System.out.println("Valor final com desconto: " + valorFinal);
         entrada.close();
 
     }

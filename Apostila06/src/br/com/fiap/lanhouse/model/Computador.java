@@ -1,6 +1,15 @@
 package br.com.fiap.lanhouse.model;
 
 public class Computador {
+aula07
+
+    private String processador;
+    private int id;
+    private String placaVideo;
+    private double armazenamento;
+    private boolean possuiSsd;
+    private int memoriaRam;
+
     private String processador;
     private int id;
     private String placa_de_video;
@@ -8,9 +17,28 @@ public class Computador {
     private boolean e_sdd;
     private int memoria_ram;
 
+
     public Computador(String processador, int id){
         this.processador = processador;
         this.id = id;
+
+    }
+
+    public Computador(String processador, int id, String placaVideo, double armazenamento, boolean possuiSsd, int memoriaRam){
+        this(processador, id);
+        this.placaVideo = placaVideo;
+        this.memoriaRam = memoriaRam;
+        this.possuiSsd = possuiSsd;
+        this.armazenamento = armazenamento;
+    }
+
+    public String getProcessador() {
+        return processador;
+    }
+
+    public void setProcessador(String processador) {
+        this.processador = processador;
+
 
     }
 
@@ -31,6 +59,7 @@ public class Computador {
 
     public void setProcessaor(String processaor) {
         this.processaor = processaor;
+
     }
 
     public int getId() {
@@ -40,6 +69,38 @@ public class Computador {
     public void setId(int id) {
         this.id = id;
     }
+
+
+    public String getPlacaVideo() {
+        return placaVideo;
+    }
+
+    public void setPlacaVideo(String placaVideo) {
+        this.placaVideo = placaVideo;
+    }
+
+    public double getArmazenamento() {
+        return armazenamento;
+    }
+
+    public void setArmazenamento(double armazenamento) {
+        this.armazenamento = armazenamento;
+    }
+
+    public boolean getPossuiSsd() {
+        return possuiSsd;
+    }
+
+    public void setPossuiSsd(boolean possuiSsd) {
+        this.possuiSsd = possuiSsd;
+    }
+
+    public int getMemoriaRam() {
+        return memoriaRam;
+    }
+
+    public void setMemoriaRam(int memoriaRam) {
+        this.memoriaRam = memoriaRam;
 
     public String getPlaca_de_video() {
         return placa_de_video;
@@ -71,5 +132,6 @@ public class Computador {
 
     public void setMemoria_ram(int memoria_ram) {
         this.memoria_ram = memoria_ram;
+
     }
 }
